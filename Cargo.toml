@@ -1,0 +1,9 @@
+[package]
+name = "kafkanetwork"
+version = "0.1.0"
+edition = "2024"
+default-run = "kafkanetwork"
+
+[dependencies]
+rdkafka = { version = "0.39.0", features = ["cmake-build"] }
+tokio = { version = "1.54.1", features = ["macros", "rt-multi-thread"] }
